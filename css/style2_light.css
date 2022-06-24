@@ -1,3 +1,5 @@
+/* ------Estilo para as paginas perfil, perfil 1, perfil 2-----*/
+
 *{
     font-family: Arial, Helvetica, sans-serif;
       margin: 0;
@@ -15,15 +17,6 @@
     --branco: #DBBABD;
     --preta: #727272;
     --cinza: #998E8D;
-}
-
-.dark-mode:root {
-    font-size: 60%;
-  --vermelho: #737373;
-  --preta: #ffffff;
-  --preto: #ffffff;
-  --branco: #000000;
-  --cinza: #737373;
 }
 
 /* Logo */
