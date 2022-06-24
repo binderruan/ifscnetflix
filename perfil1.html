@@ -6,21 +6,34 @@
     <meta name="author" content="Ruan carlos Binder">
     <meta name="descricao" content="filme, assistir online, assistir TV, TV online, séries, séries de TV online, séries online, ver filmes, filmes streaming, TV streaming, séries streaming, assistir online, assistir filmes Brasil, filmes sem download, temporada completa série, longas, assistir a longas">
     <link rel="shortcut icon" href="./img/logo-n.png">
-    <link rel="stylesheet" href="css/style2.css">
-    <title>Netflix</title>
+    <link rel="stylesheet" href="css/style2.css" id="estilo">
+    <script>
+
+    function changeTheme(){
+      var inputDarkMode = document.getElementById('input-dark-mode');
+      if(inputDarkMode.checked){
+        document.getElementById('estilo').href='css/style2_light.css';
+      }else{
+        document.getElementById('estilo').href='css/style2.css';
+      }
+    }
+    </script>
+
+    <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
 </head>
 
 <body>
     <header>
         <div class="conteiner-menu">
               <a class="logo" href="perfil1.html"><img title="logo netflix" src="./img/logo.png" ></a>
+
             <nav >
                 <a href="#" >Inicio</a>
                 <a href="#series" >Séries</a>
                 <a href="#filmes">Filmes</a>
                 <a href="#minhalista">Minha Lista</a>
                 <a href="login.html">Sair</a>
-                <a href="perfil1_light.html"> 💡 </a>
+                <a > <label for="switch"> <input type="checkbox" id="input-dark-mode" onclick="changeTheme()">💡</label></a>
             </nav>
         </div>
     </header>

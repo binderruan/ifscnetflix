@@ -5,9 +5,21 @@
     <meta charset="UTF-8">
     <meta name="author" content="Ruan carlos Binder">
     <meta name="descricao" content="filme, assistir online, assistir TV, TV online, séries, séries de TV online, séries online, ver filmes, filmes streaming, TV streaming, séries streaming, assistir online, assistir filmes Brasil, filmes sem download, temporada completa série, longas, assistir a longas">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/logo-n.png">
-    <title>Netflix</title>
+    <link rel="stylesheet" href="css/style.css" id="estilo">
+    <script>
+
+    function changeTheme(){
+      var inputDarkMode = document.getElementById('input-dark-mode');
+      if(inputDarkMode.checked){
+        document.getElementById('estilo').href='css/style_light.css';
+      }else{
+        document.getElementById('estilo').href='css/style.css';
+      }
+    }
+    </script>
+
+    <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
 </head>
 
 <body class="body">
@@ -32,6 +44,7 @@
                     <div>
                         <input type="password" placeholder="Senha" required>
                     </div>
+
                     <button><a style="color: white;  text-decoration:none;" href="perfil.html">Entrar</a></button>
                     <div class="form-footer">
                         <input type="checkbox" id="check">
@@ -42,7 +55,7 @@
             <div class="box-descricao">
                 <p>Novo por aqui?<span> Assine agora</span>.</p>
             </div>
-            <button><a  href="login_light.html">💡</a></button>
+            <button><label for="switch">  <input type="checkbox" id="input-dark-mode" onclick="changeTheme()">💡</label></button>
         </div>
     </div>
   </div>
